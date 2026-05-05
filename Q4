@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int itemNo, quantity;
+    float unitPrice, amount, discountedAmount;
+
+    cout << "Enter item number: ";
+    cin >> itemNo;
+    cout << "Enter quantity: ";
+    cin >> quantity;
+    cout << "Enter unit price: ";
+    cin >> unitPrice;
+
+    amount = quantity * unitPrice;
+    discountedAmount = amount - (amount * 0.20);
+
+    cout << "Item No: " << itemNo << endl;
+    cout << "Total amount before discount: " << amount << endl;
+    cout << "Total amount after 20% discount: " << discountedAmount << endl;
+
+    return 0;
+}
