@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+bool isValidUsername(string username) {
+    for (char ch : username) {
+        if (!isalnum(ch)) return false; // only letters and digits allowed
+    }
+    return true;
+}
+
+int main() {
+    string username;
+    cout << "Enter username: ";
+    cin >> username;
+
+    if (isValidUsername(username))
+        cout << "Username accepted." << endl;
+    else
+        cout << "Username rejected (contains space or special character)." << endl;
+
+    return 0;
+}
+
