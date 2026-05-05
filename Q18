@@ -1,0 +1,16 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string id;
+    cout << "Enter ID: ";
+    cin >> id;
+
+    string rev = string(id.rbegin(), id.rend());
+
+    if (id == rev) cout << "The ID is a Palindrome." << endl;
+    else cout << "The ID is not a Palindrome." << endl;
+
+    return 0;
+}
